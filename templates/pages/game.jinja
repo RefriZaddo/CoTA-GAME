@@ -1,0 +1,28 @@
+{% include "head.jinja" %}
+<body>
+<main>
+    {% include "header.jinja" %}
+    <article class="game">
+      {% for item in placeData %}
+        {%- if item['tag'] == 'img' %}
+          <{{ item['tag'] }} width="300px" src="{{ item['src'] }}"></{{ item['tag'] }}>
+        {%- elif item['tag'] == 'key' %}
+          <b>KEY REQUIRED.</b>
+          <div id="keyinput">
+            INPUT A KEY:
+            <input class="keyInput" id="{{item['key']}}-{{item['location']}}"><button onclick="if(document.getElementById('{{item['key']}}-{{item['location']}}').value.toLowerCase() == '{{item['key'].lower()}}'){document.location.href='/game?location={{item['location']}}'}else{alert('WRONG KEY')}">SUBMIT</button>
+          </div>
+        {%- else %}
+          <{{ item['tag'] }}{% if 'href' in item %} href="{{ item['href'] }}"{% endif %}>
+            {% if 'text' in item %}{{ item['text'] }}{% endif %}
+          </{{ item['tag'] }}>
+        {%- endif %}
+      {% endfor %}
+    </article>
+    <footer class="main">
+      <p>There are {{fileCount}} pages</p>
+      <p>Recently changed: {{recentArray}}</p>
+    </footer>
+  </main>
+</body>
+</html>

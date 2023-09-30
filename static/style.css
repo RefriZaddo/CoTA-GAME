@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+header.main h1 {
+    margin: 0;
+    font-size: 1.17em;
+    text-transform: uppercase;
+}
+
+header.main nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header.main nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+footer.main {
+    font-size: smaller;
+}
+
+footer.main p {
+    margin: 0;
+}
+
+main {
+    margin: 1em auto;
+    width: 60em;
+}
+
+main > * {
+    border-bottom: 1px solid black;
+    padding: 0.5em;
+}
+
+main:last-child {
+    border-bottom: unset;
+}
+
+main .game :first-child, main .editor :first-child {
+    margin-top: 0;
+    padding: 0;
+}
+
+.game a:before {
+    content: "> ";
+    font-weight: bold;
+}
+
+/* this could be done better if the formatting in location files was better */
+.game a {
+    text-decoration: none;
+    display: block;
+}
+
+a, a:visited {
+    color: #1f1fb7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 80em) {
+    main {
+        margin: 0;
+        width: unset;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #181a1b;
+        color: #e8e6e3;
+    }
+
+    main {
+        background: #222426;
+        border: 1px solid rgb(58, 62, 65);
+    }
+
+    main > * {
+        border-bottom: 1px solid #3a3e41;
+    }
+
+    a, a:visited {
+        color: rgb(105, 166, 213);
+    }
+}

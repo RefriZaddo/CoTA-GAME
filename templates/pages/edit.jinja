@@ -1,0 +1,17 @@
+{% include "head.jinja" %}
+<body>
+  <main>
+    <header class="main">
+      <h1>Litevex Game 2</h1>
+    </header>
+    <article class="editor">
+      <p>Do you want to edit the <b>{{locationId}}</b> location?</p>
+      {% include "guide.jinja" %}
+      <form id="post-form" action="/createLocation?location={{locationId}}" method="post" enctype="multipart/form-data">
+        <textarea rows="8" cols="55" id="content" name="content" form="post-form">{{locationData}}</textarea><br>
+        <input type="submit" id="submit" value="Create">
+      </form>
+    </article>
+  </main>
+</body>
+</html>

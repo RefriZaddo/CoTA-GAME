@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin: 1em auto;
+    padding: 0.5em;
+    width: 60em;
+}
+
+#stats p {
+    margin: 0;
+}
+
+#game a:before {
+    content: "> ";
+    font-weight: bold;
+}
+
+#game a {
+    display: block;
+    margin-bottom: 13px;
+}
+
+#top h3 {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+#top > a {
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: #1f1fb7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 80em) {
+    main {
+        margin: 0;
+        width: unset;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #181a1b;
+        color: #e8e6e3;
+    }
+
+    main {
+        background: #222426;
+        border: 1px solid #3a3e41;
+    }
+
+    a, a:visited {
+        color: #69a6d5;
+    }
+}
+
