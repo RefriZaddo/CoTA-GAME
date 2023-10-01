@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-article nav ul header footer {
+article {
     background-color: #7f3f1f;
 }
 
@@ -14,6 +14,7 @@ header.main h1 {
 }
 
 header.main nav ul {
+    background-color: #6f2f0f;
     list-style: none;
     margin: 0;
     padding: 0;
