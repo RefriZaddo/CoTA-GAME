@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+article {
+    background-color: #7f3f1f;
+}
+
 header.main h1 {
     margin: 0;
     font-size: 1.17em;
