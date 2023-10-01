@@ -4,6 +4,13 @@ body {
     margin: 0;
 }
 
+textarea {
+    background-color: #3f0000;
+    color: #ffefdf;
+    border: none;
+    border-bottom: 2px solid orange;
+}
+
 article {
     background-color: #7f3f1f;
 }
