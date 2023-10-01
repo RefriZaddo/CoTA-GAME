@@ -2,6 +2,9 @@ import os
 from flask import Flask, flash, make_response, request, redirect, url_for, render_template, send_from_directory
 from slugify import slugify
 
+cli = sys.modules['flask.cli']
+cli.show_server_banner = lambda *x: None
+
 app = Flask(
   __name__,
   static_url_path='/',
