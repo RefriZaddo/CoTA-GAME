@@ -38,7 +38,7 @@ footer.main p {
 }
 
 main {
-    background-color: #7f3f1f;
+    background: #5f1f00;
     margin: 1em auto;
     width: 60em;
 }
@@ -69,7 +69,7 @@ main .game :first-child, main .editor :first-child {
 }
 
 a, a:visited {
-    color: #1f1fb7;
+    color: #ff1f0f;
 }
 
 a:hover {
@@ -85,13 +85,13 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: #181a1b;
+        background: #5f1f00;
         color: #e8e6e3;
     }
 
     main {
-        background: #222426;
-        border: 1px solid rgb(58, 62, 65);
+        background: #5f1f00;
+        border: 1px solid rgb(100, 50, 25);
     }
 
     main > * {
@@ -99,6 +99,6 @@ a:hover {
     }
 
     a, a:visited {
-        color: rgb(105, 166, 213);
+        color: color: #ff1f0f;
     }
 }
