@@ -1,11 +1,12 @@
 body {
+    font-family: "Century Gothic", "Liberation Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(127, 63, 31);
     margin: 0;
 }
 
 header.main h1 {
     margin: 0;
     font-size: 1.17em;
-    text-transform: uppercase;
 }
 
 header.main nav ul {
