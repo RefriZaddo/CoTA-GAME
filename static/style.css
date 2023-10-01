@@ -38,6 +38,7 @@ footer.main p {
 }
 
 main {
+    background-color: #7f3f1f;
     margin: 1em auto;
     width: 60em;
 }
